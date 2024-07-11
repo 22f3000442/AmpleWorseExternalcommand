@@ -1,7 +1,7 @@
 new Vue({
     el: '#app',
     data: {
-      replyCount: 5, // Example initial count of replies
+      replyCount: 0, // Example initial count of replies
       isPrimary: true
     },
     computed: {
@@ -14,6 +14,9 @@ new Vue({
       }
     },
     methods: {
+      addReply() {
+          this.replyCount++; // Increment reply count
+      },
       toggleTheme() {
         this.isPrimary = !this.isPrimary;
       }

@@ -10,6 +10,7 @@
 <body>
   <div id="app">
     <p>Number of replies: {{ replyCount }}</p>
+    <button @click="addReply" class="btn btn-info">Add Reply</button>
     <button :class="buttonClass" @click="toggleTheme">Change Theme</button>
   </div>
    <script src="app.js"></script>
